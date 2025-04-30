@@ -13,7 +13,6 @@ Select ONE Additional
 [ no ] Feature 5 - Use .append() method
 -->
 
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -29,32 +28,48 @@ Select ONE Additional
     <ol>
       <li>
         <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+        <p>piano recitle.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcBaX8mUOq4SfSPwLd9ZOd7Zub-fXPdbFrbw&s" id="Piano" style="display:  none">
+
       </li>
 
       <li>
         <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <p>My meeting with real estate lawyers.</p>
+         <img src= "https://www.hockerlawfirm.com/wp-content/uploads/real-estate-lawyer.jpeg" id="law" style="display:none">
       </li>
 
       <li>
         <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <p>My birthday</p>
+        <img src =" https://m.media-amazon.com/images/I/81DXhu6ONML._AC_UF894,1000_QL80_.jpg" id="birth" style="display:none">
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
+      $("h1").text(" MY THREE TOP MEMEORIES LOL!!!");
+      
+ $("p").css("color", "blue ")
+     
+      
       $("#mem1-button").click(function () {
         $("#mem1").css("color", "purple");
+        $("#Piano").show(3000)
+
       });
 
+      
       $("#mem2-button").click(function () {
         $("#mem2").css("color", "blue");
-      });
+        $("#law").show(3000)
+      
+ });
 
+      
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
+        $("#birth").show(3000)
       });
     </script>
   </body>
